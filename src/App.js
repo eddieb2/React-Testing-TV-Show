@@ -18,11 +18,12 @@ export default function App() {
 
   useEffect(() => {
     fetchShow().then((res) => {
+      console.log("res", res.data);
       setShow(res.data);
       setSeasons(formatSeasons(res.data._embedded.episodes));
     });
   }, []);
-
+  console.log("epi", episodes);
   const handleSelect = (e) => {
     setSelectedSeason(e.value);
   };
