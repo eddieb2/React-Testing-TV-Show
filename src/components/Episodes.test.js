@@ -3,6 +3,7 @@ import { render, queryAllByTestId } from "@testing-library/react";
 import Episodes from "./Episodes";
 
 // SECTION MOCK DATA - from res.data._embedded.episodes
+// (length = 2)
 const mockEpisodesData = [
   {
     id: 553946,
